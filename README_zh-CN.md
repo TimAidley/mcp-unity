@@ -375,18 +375,6 @@ Unity 6.2 将引入新的内置 AI 工具，包括之前的 Unity Muse（用于�
     -   **Unity 6.2 AI：** “为这个材质生成一个科幻纹理。”“更新场景中所有树木的位置，使其放置在标记为 ‘forest’ 的地形区域内。”“为这个角色创建一个行走动画。”“生成 2D 精灵以完成角色。”“询问控制台日志中错误的详细信息。”
 
 -   **互补，而非互斥：**
-    MCP Unity 和 Unity 的原生 AI 工具可以被视为互补的。您可以使用 MCP Unity 和您的 AI 编码助手来设置场景或批量修改资产，然后使用 Unity AI 工具来生成特定纹理，或创建动画，或为其中一个资产创建 2D 精灵。MCP Unity 提供了一种灵活的、基于协议的方式与编辑器交互，这对于希望与更广泛的外部 AI 服务集成或构建自定义自动化工作流程的开发人员来说非常强大。
-
-</details>
-
-<details>
-<summary><span style="font-size: 1.1em; font-weight: bold;">目前哪些 MCP 主机和 IDE 支持 MCP Unity？</span></summary>
-
-MCP Unity 旨在与任何可以作为 MCP 客户端的 AI 助手或开发环境配合使用。生态系统正在不断发展，但目前已知的集成或兼容平台包括：
--  Windsurf
--  Cursor
--  GitHub Copilot
--  Claude Desktop
 
 </details>
 
