@@ -249,6 +249,10 @@ namespace McpUnity.Unity
             // Register AddAssetToSceneTool
             AddAssetToSceneTool addAssetToSceneTool = new AddAssetToSceneTool();
             _tools.Add(addAssetToSceneTool.Name, addAssetToSceneTool);
+            
+            // Register CreatePrefabTool
+            CreatePrefabTool createPrefabTool = new CreatePrefabTool();
+            _tools.Add(createPrefabTool.Name, createPrefabTool);
         }
         
         /// <summary>
