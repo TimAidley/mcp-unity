@@ -14,7 +14,6 @@ import { registerAddAssetToSceneTool } from './tools/addAssetToSceneTool.js';
 import { registerUpdateGameObjectTool } from './tools/updateGameObjectTool.js';
 import { registerCreatePrefabTool } from './tools/createPrefabTool.js';
 import { registerGetMenuItemsResource } from './resources/getMenuItemResource.js';
-import { registerPrefabCreationPrompt } from './prompts/prefabCreationPrompt.js';
 import { registerGetConsoleLogsResource } from './resources/getConsoleLogsResource.js';
 import { registerGetHierarchyResource } from './resources/getScenesHierarchyResource.js';
 import { registerGetPackagesResource } from './resources/getPackagesResource.js';
@@ -70,7 +69,6 @@ registerGetAssetsResource(server, mcpUnity, resourceLogger);
 
 // Register all prompts into the MCP server
 registerGameObjectHandlingPrompt(server);
-registerPrefabCreationPrompt(server);
 
 // Server startup function
 async function startServer() {
