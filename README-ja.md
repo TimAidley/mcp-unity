@@ -83,6 +83,9 @@ MCP Unityは、Unityの`Library/PackedCache`フォルダーをワークスペー
 - `add_asset_to_scene`: AssetDatabaseからアセットをUnityシーンに追加
   > **例:** "プロジェクトからPlayerプレハブを現在のシーンに追加"
 
+- `create_prefab`: プレハブを作成し、オプションでMonoBehaviourスクリプトとシリアライズされたフィールド値を設定
+  > **例:** "'PlayerController'スクリプトから'Player'という名前のプレハブを作成"
+
 ### MCPサーバーリソース
 
 - `unity://menu-items`: `execute_menu_item`ツールを容易にするために、Unityエディターで利用可能なすべてのメニュー項目のリストを取得

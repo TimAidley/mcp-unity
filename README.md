@@ -85,6 +85,9 @@ The following tools are available for manipulating and querying Unity scenes and
 - `add_asset_to_scene`: Adds an asset from the AssetDatabase to the Unity scene
   > **Example prompt:** "Add the Player prefab from my project to the current scene"
 
+- `create_prefab`: Creates a prefab with optional MonoBehaviour script and serialized field values
+  > **Example prompt:** "Create a prefab named 'Player' from the 'PlayerController' script"
+
 ### MCP Server Resources
 
 - `unity://menu-items`: Retrieves a list of all available menu items in the Unity Editor to facilitate `execute_menu_item` tool
