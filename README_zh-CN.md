@@ -84,6 +84,9 @@ MCP Unity 通过将 Unity `Library/PackedCache` 文件夹添加到您的工作�
 - `add_asset_to_scene`: 将 AssetDatabase 中的资源添加到 Unity 场景中
   > **示例提示:** "将我的项目中的 Player 预制体添加到当前场景"
 
+- `create_prefab`: 创建预制体，并可选择添加 MonoBehaviour 脚本和设置序列化字段值
+  > **示例提示:** "从 'PlayerController' 脚本创建一个名为 'Player' 的预制体"
+
 ### MCP 服务器资源
 
 - `unity://menu-items`: 获取 Unity 编辑器中所有可用的菜单项列表，以方便 `execute_menu_item` 工具

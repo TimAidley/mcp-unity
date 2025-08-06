@@ -20,7 +20,7 @@ export function registerGameObjectHandlingPrompt(server: McpServer) {
           role: 'user', 
           content: {
             type: 'text',
-            text: `You are an expert AI assistant integrated with Unity via MCP.
+            text: `You are an expert AI assistant integrated with Unity via a MCP server.
 
 When working directly with GameObjects or any of their components in Unity scenes, you have access to the following resources and tools:
 - Resource "get_scenes_hierarchy" (unity://scenes_hierarchy) to list all GameObjects.
@@ -28,6 +28,7 @@ When working directly with GameObjects or any of their components in Unity scene
 - Tool "select_gameobject" to select a GameObject by **instance ID**, the **name** or the **path** of the GameObject.
 - Tool "update_gameobject" to update a GameObject's core properties (name, tag, layer, active state, static state), or create the GameObject if it does not exist.
 - Tool "update_component" to update or add a component on a GameObject, including common frequently used components (e.g. Transform, RectTransform, BoxCollider, Rigidbody, etc).
+- Tool "create_prefab" to create a prefab from a GameObject in the scene with optional MonoBehaviour script and serialized field values.
 
 Workflow:
 1. Use "get_scenes_hierarchy" to confirm the GameObject ID, name or path for "${gameObjectIdOrName}".
@@ -38,8 +39,10 @@ Workflow:
 6. Confirm success and report any errors.
 
 Guidance:
-- Use "update_gameobject" for creating GameObjects or changing their core properties.
-- Use "update_component" for adding or modifying components on an existing GameObject.
+- Use "update_gameobject" for creating GameObjects in the scene or to change a GameObject's core properties.
+- Use "update_component" for adding or modifying components on an existing GameObject in the scene.
+- Use "create_prefab" for creating prefabs from GameObjects in the scene.
+- Component Scripts must be compiled in the Unity project before using "update_component" or "create_prefab".
 - Always validate inputs and request clarification if the identifier is ambiguous.`
           }
         },
