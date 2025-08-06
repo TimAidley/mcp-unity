@@ -12,7 +12,9 @@ import { registerGetConsoleLogsTool } from './tools/getConsoleLogsTool.js';
 import { registerUpdateComponentTool } from './tools/updateComponentTool.js';
 import { registerAddAssetToSceneTool } from './tools/addAssetToSceneTool.js';
 import { registerUpdateGameObjectTool } from './tools/updateGameObjectTool.js';
+import { registerCreatePrefabTool } from './tools/createPrefabTool.js';
 import { registerGetMenuItemsResource } from './resources/getMenuItemResource.js';
+import { registerPrefabCreationPrompt } from './prompts/prefabCreationPrompt.js';
 import { registerGetConsoleLogsResource } from './resources/getConsoleLogsResource.js';
 import { registerGetHierarchyResource } from './resources/getScenesHierarchyResource.js';
 import { registerGetPackagesResource } from './resources/getPackagesResource.js';
@@ -55,6 +57,7 @@ registerGetConsoleLogsTool(server, mcpUnity, toolLogger);
 registerUpdateComponentTool(server, mcpUnity, toolLogger);
 registerAddAssetToSceneTool(server, mcpUnity, toolLogger);
 registerUpdateGameObjectTool(server, mcpUnity, toolLogger);
+registerCreatePrefabTool(server, mcpUnity, toolLogger);
 
 // Register all resources into the MCP server
 registerGetTestsResource(server, mcpUnity, resourceLogger);
@@ -67,6 +70,7 @@ registerGetAssetsResource(server, mcpUnity, resourceLogger);
 
 // Register all prompts into the MCP server
 registerGameObjectHandlingPrompt(server);
+registerPrefabCreationPrompt(server);
 
 // Server startup function
 async function startServer() {
