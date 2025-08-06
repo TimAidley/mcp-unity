@@ -10,7 +10,7 @@ const toolDescription = 'Creates a prefab with optional MonoBehaviour script and
 
 // Parameter schema for the tool
 const paramsSchema = z.object({
-  scriptName: z.string().optional().describe('The name of the MonoBehaviour script class (optional)'),
+  componentName: z.string().optional().describe('The name of the MonoBehaviour Component to add to the prefab (optional)'),
   prefabName: z.string().describe('The name of the prefab to create'),
   fieldValues: z.record(z.any()).optional().describe('Optional JSON object of serialized field values to apply to the prefab')
 });
